@@ -14,10 +14,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button addNoteButton = findViewById(R.id.lisaaMuistilaput);
-        Button listNotesButton = findViewById(R.id.listaaMuistilaput);
+        Button addNoteActivityButton = findViewById(R.id.AddNoteActivityButton);
+        Button listNotesActivityButton = findViewById(R.id.ListNotesActivityButton);
 
-        addNoteButton.setOnClickListener(v -> startActivity(new Intent(this, AddNoteActivity.class)));
-        listNotesButton.setOnClickListener(v -> startActivity(new Intent(this, ListNotesActivity.class)));
+        addNoteActivityButton.setOnClickListener(v -> startActivity(new Intent(this, AddNoteActivity.class)));
+        listNotesActivityButton.setOnClickListener(v -> startActivity(new Intent(this, ListNotesActivity.class)));
     }
 }
